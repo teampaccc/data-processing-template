@@ -6,7 +6,7 @@
 #SBATCH -c 30
 #SBATCH --mem=40000
 #send email when job ends or fails
-#SBATCH --mail-user=jpalmo@mit.edu
+#SBATCH --mail-user=<<username>>@mit.edu
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=END
 
@@ -14,4 +14,5 @@
 source test.env
 
 # Run your Python script with the desired parameters
-python script.py --name "Joe"
+# replace with your name
+python script.py --name "Your Name"
